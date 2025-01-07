@@ -17,6 +17,7 @@
     <PackageReference Include="FluentAssertions" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="9.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="RichardSzalay.MockHttp" Version="7.0.0" />
     <PackageReference Include="Verify" Version="28.8.1" />
     <PackageReference Include="Verify.Xunit" Version="28.8.1" />
     <PackageReference Include="xunit" Version="2.9.2" />
@@ -32,11 +33,6 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Timer\" />
-    <Folder Include="TaskAwait\" />
   </ItemGroup>
 
 </Project>

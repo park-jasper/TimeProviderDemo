@@ -26,6 +26,6 @@ public class ReporterRefactoredTests
         var jsonReport = reporter.PrintJsonReport();
 
         // Then
-        Verifier.Verify(jsonReport);
+        Verifier.VerifyJson(jsonReport);
     }
 }
