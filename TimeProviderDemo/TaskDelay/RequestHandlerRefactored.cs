@@ -30,7 +30,7 @@ public class RequestHandlerRefactored
                 var response = await this.client.GetAsync($"https://some.uri/NumberOfLines/{key}");
                 var body = await response.Content.ReadAsStreamAsync();
                 var responseObject = await JsonSerializer.DeserializeAsync<Response>(body);
-                return responseObject.NumberOfLines;
+                return responseObject!.NumberOfLines;
             }
             catch (Exception e)
             {
